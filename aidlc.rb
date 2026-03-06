@@ -11,7 +11,7 @@ class Aidlc < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/jorgemuza/aidlc-cli/releases/download/v0.2.0/aidlc_0.2.0_darwin_amd64.tar.gz"
-      sha256 "8326bbfb6ce41e426dfd272a785a4fe035cc702e4089649ebc3998e8b5455ec1"
+      sha256 "ca89d4e3530d81e1a80255ae248e2e33290c7eae8ec20653d5ae56a1f7571bae"
 
       define_method(:install) do
         bin.install "aidlc"
@@ -19,7 +19,7 @@ class Aidlc < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/jorgemuza/aidlc-cli/releases/download/v0.2.0/aidlc_0.2.0_darwin_arm64.tar.gz"
-      sha256 "394a8b1729247d268c4630c130336cf2ed72beb63422cf939b3eafb8fecb890e"
+      sha256 "ee5c9a9abdb4e84a2b3fcf9b862db85b4217e6ba09602dd0232235dc4c7fc9ca"
 
       define_method(:install) do
         bin.install "aidlc"
@@ -30,14 +30,14 @@ class Aidlc < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/jorgemuza/aidlc-cli/releases/download/v0.2.0/aidlc_0.2.0_linux_amd64.tar.gz"
-      sha256 "10f36b809effe6db943fcff7843b40beb98f5433602dcff77bdcf1ae0e688e1b"
+      sha256 "e7440813b49172781bef11c4e6cf77867b3e62dae63e9d335bd7f85c096e4f5e"
       define_method(:install) do
         bin.install "aidlc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/jorgemuza/aidlc-cli/releases/download/v0.2.0/aidlc_0.2.0_linux_arm64.tar.gz"
-      sha256 "8b4860038b683b863545903df6aa9260031f5d45682ccfc5a8d66ef4d4d9c678"
+      sha256 "cc35f31fd328bd1a273434024aaac9e5f5c01e3d1f0fa4dfbbe68d02e725e361"
       define_method(:install) do
         bin.install "aidlc"
       end
