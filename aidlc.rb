@@ -5,21 +5,21 @@
 class Aidlc < Formula
   desc "CLI for managing connections to development lifecycle services"
   homepage "https://github.com/jorgemuza/aidlc-cli"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jorgemuza/aidlc-cli/releases/download/v0.1.0/aidlc_0.1.0_darwin_amd64.tar.gz"
-      sha256 "246808156a45b8acb222864a5a3b391a0ece010d3f84f3e526a250df7bb77d1d"
+      url "https://github.com/jorgemuza/aidlc-cli/releases/download/v0.2.0/aidlc_0.2.0_darwin_amd64.tar.gz"
+      sha256 "8326bbfb6ce41e426dfd272a785a4fe035cc702e4089649ebc3998e8b5455ec1"
 
       define_method(:install) do
         bin.install "aidlc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jorgemuza/aidlc-cli/releases/download/v0.1.0/aidlc_0.1.0_darwin_arm64.tar.gz"
-      sha256 "4ca8af4ade674218ad69b5dd503608f0d1e873a054c9d2ea966ac28ba5f3a2a7"
+      url "https://github.com/jorgemuza/aidlc-cli/releases/download/v0.2.0/aidlc_0.2.0_darwin_arm64.tar.gz"
+      sha256 "394a8b1729247d268c4630c130336cf2ed72beb63422cf939b3eafb8fecb890e"
 
       define_method(:install) do
         bin.install "aidlc"
@@ -29,15 +29,15 @@ class Aidlc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jorgemuza/aidlc-cli/releases/download/v0.1.0/aidlc_0.1.0_linux_amd64.tar.gz"
-      sha256 "43145580bb6df1d22987ba43df093c765ccbeb0d1ccf4339c8916bb22174f365"
+      url "https://github.com/jorgemuza/aidlc-cli/releases/download/v0.2.0/aidlc_0.2.0_linux_amd64.tar.gz"
+      sha256 "10f36b809effe6db943fcff7843b40beb98f5433602dcff77bdcf1ae0e688e1b"
       define_method(:install) do
         bin.install "aidlc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jorgemuza/aidlc-cli/releases/download/v0.1.0/aidlc_0.1.0_linux_arm64.tar.gz"
-      sha256 "63cb0aa9cf9e12795d0456101be8fbf9ecf7e12d134f98c93e7c962cacd63b4c"
+      url "https://github.com/jorgemuza/aidlc-cli/releases/download/v0.2.0/aidlc_0.2.0_linux_arm64.tar.gz"
+      sha256 "8b4860038b683b863545903df6aa9260031f5d45682ccfc5a8d66ef4d4d9c678"
       define_method(:install) do
         bin.install "aidlc"
       end
