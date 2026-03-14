@@ -5,21 +5,21 @@
 class Orbit < Formula
   desc "CLI for managing connections to development lifecycle services"
   homepage "https://github.com/jorgemuza/orbit"
-  version "0.15.0"
+  version "0.16.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jorgemuza/orbit/releases/download/v0.15.0/orbit_0.15.0_darwin_amd64.tar.gz"
-      sha256 "539dc43cae4ab3ad33033dba8dbb947990ad6ea2ca631ed8dc0ab03a05d3ab4f"
+      url "https://github.com/jorgemuza/orbit/releases/download/v0.16.0/orbit_0.16.0_darwin_amd64.tar.gz"
+      sha256 "574fc696f4fac03c9518d0001b09f6395d62a16e513f59fe05606c5c1abe61b8"
 
       define_method(:install) do
         bin.install "orbit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jorgemuza/orbit/releases/download/v0.15.0/orbit_0.15.0_darwin_arm64.tar.gz"
-      sha256 "430346f28e58b6041a59c3a395dc0f3af7d8c5374ad681e470ea2b969bf8dad0"
+      url "https://github.com/jorgemuza/orbit/releases/download/v0.16.0/orbit_0.16.0_darwin_arm64.tar.gz"
+      sha256 "533738baf99db85cab10a1589134cffb61ce026946934b2b142d475c6d108c1e"
 
       define_method(:install) do
         bin.install "orbit"
@@ -29,15 +29,15 @@ class Orbit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jorgemuza/orbit/releases/download/v0.15.0/orbit_0.15.0_linux_amd64.tar.gz"
-      sha256 "4bf544121c154beef0257c9f917eb500749624c406be9400669a636feacf78bd"
+      url "https://github.com/jorgemuza/orbit/releases/download/v0.16.0/orbit_0.16.0_linux_amd64.tar.gz"
+      sha256 "9060c208a2afa6267a40966403bf50676dc7ba1f2f0dcf13ca6e521c605733b6"
       define_method(:install) do
         bin.install "orbit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jorgemuza/orbit/releases/download/v0.15.0/orbit_0.15.0_linux_arm64.tar.gz"
-      sha256 "58634d9445f5ff5dc66de2f4c7625924c495573091cc3bf64dfb4d76dd4e7c8f"
+      url "https://github.com/jorgemuza/orbit/releases/download/v0.16.0/orbit_0.16.0_linux_arm64.tar.gz"
+      sha256 "353a33dd41b2670ae1ec2d8008dcd1bf465c9d1d4ac4212724375b555b88ea47"
       define_method(:install) do
         bin.install "orbit"
       end
