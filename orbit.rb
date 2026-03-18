@@ -11,7 +11,7 @@ class Orbit < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/jorgemuza/orbit/releases/download/v0.20.0/orbit_0.20.0_darwin_amd64.tar.gz"
-      sha256 "495ea0cf1d8972aa9ac49fbc86507c77b51cd4df21bad9f5ab1af161bbf318cd"
+      sha256 "38615a590717c585ddf408fed6eb5239df322044e1298350cacc26e5da5d1b00"
 
       define_method(:install) do
         bin.install "orbit"
@@ -19,7 +19,7 @@ class Orbit < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/jorgemuza/orbit/releases/download/v0.20.0/orbit_0.20.0_darwin_arm64.tar.gz"
-      sha256 "91ff06ae08af540273f396f7a56a88c324427d82d94116c246692d367a2b1d43"
+      sha256 "226d5c3a52f742949d1b5f7fe62bf039bda6a91e0a54922fb3b14faf41e49d6d"
 
       define_method(:install) do
         bin.install "orbit"
@@ -30,14 +30,14 @@ class Orbit < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/jorgemuza/orbit/releases/download/v0.20.0/orbit_0.20.0_linux_amd64.tar.gz"
-      sha256 "e48b19ce613e69ea54daaf8402e870f01e8b419c58c4bbe6d9cf999f334b1d11"
+      sha256 "a8d3a49ebe9dabafc2f64c957edd9b58abb0579625453023b1abee7edcec8017"
       define_method(:install) do
         bin.install "orbit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/jorgemuza/orbit/releases/download/v0.20.0/orbit_0.20.0_linux_arm64.tar.gz"
-      sha256 "909481ba36e2117e0c9f98cd7d019182de0459a82122c6afff3b4de9d2951a24"
+      sha256 "af2f5d1913a830e56a119b4abeac42e91cc6f9a5ccd4f4a69dccd35a2ca00fbb"
       define_method(:install) do
         bin.install "orbit"
       end
