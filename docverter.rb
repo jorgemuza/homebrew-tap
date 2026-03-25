@@ -5,21 +5,21 @@
 class Docverter < Formula
   desc "Unified document converter — Markdown to DOCX/PDF, Excalidraw to SVG/PNG"
   homepage "https://github.com/jorgemuza/docverter"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jorgemuza/docverter/releases/download/v0.3.0/docverter_0.3.0_darwin_amd64.tar.gz"
-      sha256 "82a07498bf44389db4d3380efec019c1b62c569cf1b14c2e32ec9c3a88bb8244"
+      url "https://github.com/jorgemuza/docverter/releases/download/v0.4.0/docverter_0.4.0_darwin_amd64.tar.gz"
+      sha256 "b58a2750e7c2ba0842c5037ba6468957798047669e6c68b6a6ceed3139559dd9"
 
       define_method(:install) do
         bin.install "docverter"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jorgemuza/docverter/releases/download/v0.3.0/docverter_0.3.0_darwin_arm64.tar.gz"
-      sha256 "dea96d65800dae7e010082ab6ec1019c05ec186c37a4dd6b4d5fab5cc630afae"
+      url "https://github.com/jorgemuza/docverter/releases/download/v0.4.0/docverter_0.4.0_darwin_arm64.tar.gz"
+      sha256 "bb2a717d4c8873ff218f9be3ac3a786a56516bf088f6e1b4e3f5b59ba91b69d3"
 
       define_method(:install) do
         bin.install "docverter"
@@ -29,15 +29,15 @@ class Docverter < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jorgemuza/docverter/releases/download/v0.3.0/docverter_0.3.0_linux_amd64.tar.gz"
-      sha256 "da339156545beb67d746920b263f58704eb1b71a3b6e690c5621cd9d728aec77"
+      url "https://github.com/jorgemuza/docverter/releases/download/v0.4.0/docverter_0.4.0_linux_amd64.tar.gz"
+      sha256 "523d9fc4cbf125282a3adec4830d905f40ff15aee32d8845af2d7278af5e9e4e"
       define_method(:install) do
         bin.install "docverter"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jorgemuza/docverter/releases/download/v0.3.0/docverter_0.3.0_linux_arm64.tar.gz"
-      sha256 "4b3b204de0c46db498a719551e20715360a47f332de58c0a72987fb09f565f43"
+      url "https://github.com/jorgemuza/docverter/releases/download/v0.4.0/docverter_0.4.0_linux_arm64.tar.gz"
+      sha256 "5065a1fd28c3100f8e3db61cd76e02df4700bbddeb2dd5dfe65fe83f46e282bf"
       define_method(:install) do
         bin.install "docverter"
       end
